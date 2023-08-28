@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 1rem;
+}
+
+.input_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+.input{
+  background: #ffffff;
+  font: inherit;
+  line-height: 1;
+  border-radius: 45px;
+  border-color: #000000;
+  margin: 0.5em;
+  padding: 1em 2em;
+  color:#000000;
+  transition: 0.25s;
+}
+.button_container {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  margin-top: 0.5rem;
+}
+ .button {
+  background: #ffffff;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  border-radius: 45px;
+  border-color: #000000;
+  margin: 0.5em;
+  padding: 1em 2em;
+  color:#000000;
+  transition: 0.25s;
+}
+.button_error {
+  background: #f60202;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  border-radius: 45px;
+  border-color: #000000;
+  margin: 0.5em;
+  padding: 1em 2em;
+  color:#000000;
+  transition: 0.25s;
+}
+/* Cambiar el color de fondo en hover */
+.input:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+ .button:hover{
+  background-color: #000000;
+  color: #ffffff;
+ }
