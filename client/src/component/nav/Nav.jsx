@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import style from "./Nav.module.css";
 
 const Nav = () => {
-  const location = useLocation();
+  const location = useLocation();//podemos usar este hook cuando queramos redirigir al usuario a la URL que haya pedido recientemente, después de ejecutar una acción.
 
   // Comprueba si la ubicación actual es la página de inicio
   const isHome = location.pathname === "/home";
@@ -37,8 +37,3 @@ const Nav = () => {
 };
 
 export default Nav;
-
-        
-          
-        
-    

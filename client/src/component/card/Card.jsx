@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import style from "./Card.module.css";
-
-const Card = ({ image, name, continent, id }) => {
+// Este componente debe mostrar la info de cada country mapeado pero ademas darnos un link para ir al Detail del mismo
+const Card = ({ flag, name, continent, id }) => {
   return (
     <div className={style.container}>
     <div className={style.card}>
       <Link to={`/detail/${id}`}>
-        <img src={image} alt="imagen"  className={style.card_image} />
+        <img src={flag} alt="imagen"  className={style.card_image} />
       </Link>
       <div className={style.card_name}>
       <em>{name}</em>

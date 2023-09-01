@@ -19,9 +19,9 @@ const DetailCountries = () => {
     {detail.name ? (
     <div className={style.container}>
       <h1>{detail.name}</h1>
-      <img src={detail.image} alt="imagen" width="200px" height="150px" />
+      <img src={detail.flag} alt="imagen" className={style.card_image} /> 
       <div className={style.countryDetail}>
-      <p className={style.nameDetail}>ID: </p>
+      <p className={style.nameDetail}>ID:{detail.id} </p>
       <p>{detail.id}</p>
       <p className={style.nameDetail}>CONTINENT: </p>
       <p>{detail.continent}</p>
@@ -40,14 +40,14 @@ const DetailCountries = () => {
         <h2>Activities:</h2>
           {detail.activities.map((activity) => (
             <div key={activity.id}>
-              <p className={style.nameActivity}>NAME: </p>
-              <p >{activity.name}</p>
-              <p className={style.nameActivity}>DURATION: </p>
-              <p>{activity.duration} hs</p>
-              <p className={style.nameActivity}>SEASON: </p>
-              <p>{activity.season}</p>
-              <p className={style.nameActivity}>DIFFICULTY: </p>
-              <p>Level: {activity.difficulty}</p>
+              <p className={style.nameActivity}>NAME: {activity.name} </p>
+              
+              <p className={style.nameActivity}>DURATION: {activity.duration} hs</p>
+             
+              <p className={style.nameActivity}>SEASON: {activity.season} </p>
+            
+              <p className={style.nameActivity}>DIFFICULTY: Level: {activity.difficulty}</p>
+              
             </div>
           ))}
           </div>

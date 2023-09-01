@@ -1,6 +1,7 @@
 body{
-  background: url("../../assets/fondo2.jpg") no-repeat center center fixed;
+  background: url("../../assets/fondo5.avif") no-repeat center center fixed;
   background-size: cover;
+
 }
 .selects{
     display: grid;
@@ -8,6 +9,7 @@ body{
     
 }
 .select{
+  
 border-color: rgb(0, 0, 0);
 background-color: rgb(0, 0, 0);
 color: rgb(255, 255, 255);

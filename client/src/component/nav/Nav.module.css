@@ -1,6 +1,6 @@
 
   .nav {
-    background: #000;
+    background: #252424;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
@@ -10,24 +10,25 @@
     padding: 0;
     border: 0;
     margin-top: 0;
+
   }
 
   
-  /* This rule centers the nav items verticaly in the bar with the height and line height properties. Spacing between the nav items is controlled by setting right and left padding.  */
+ 
   .nav li {
     display: inline-block;
     list-style: none;
-    height: 70px; /* should be the same as line-height */
-    line-height: 60px; /* should be the same as height */
-    padding: 0 40px; /* "0" sets top and bottom padding to none */
+    height: 70px;
+    line-height: 60px; 
+    padding: 0 40px; 
   }
   
   .button {
-    background: #000000;
+    background-color: transparent;
     border: 2px solid;
     font: inherit;
     line-height: 1;
-    border-radius: 10px;
+    border-radius: 20px;
     border-color: #000000;
     margin: 0.5em;
     padding: 1em 2em;

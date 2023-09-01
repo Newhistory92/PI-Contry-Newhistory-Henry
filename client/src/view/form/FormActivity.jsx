@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { validate } from "./validate"; // Reemplaza 'ruta-del-archivo' con la ruta correcta
 import style from "./FormActivity.module.css";
 
+
 const FormActivity = () => {
   const navegate = useNavigate();
   const dispatch = useDispatch();

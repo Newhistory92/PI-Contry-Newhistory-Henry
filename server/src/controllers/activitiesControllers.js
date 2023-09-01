@@ -27,21 +27,5 @@ const createActivity = async (name, difficulty, duration, season, countries) => 
   return newActivity;
   // Devuelve la nueva actividad creada.
 }
-const modifyActivity = async (id, name, difficulty, duration, season, countries) => {
-  try {
-    const activity = await Activity.findByPk(id);
-    if (!activity) {
-      throw new Error('No se encontró la actividad');
-    }
-    
-    await activity.setCountries(countries);
-    
-    const updatedActivity = await activity.update({ name, difficulty, duration, season });
-    
-    return updatedActivity;
-  } catch (error) {
-    throw new Error('No se pudo modificar la actividad');
-  }
-};
-module.exports = { createActivity, getActivity, modifyActivity };
+module.exports = { createActivity, getActivity, };
 // Exporta las funciones createActivity y getActivity para que puedan ser utilizadas en otros archivos.

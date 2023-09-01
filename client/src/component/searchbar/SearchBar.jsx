@@ -4,7 +4,7 @@ import { searchCountries } from '../../redux/actions';
 
 import style from './SearchBar.module.css';
 
-const SearchBar = ({onPageChange}) => {
+const SearchBar = ({onPageChange}) => {//El componente Pagination nos permite navegar entre una lista muy grande de entradas.
   const dispatch = useDispatch();
   const [searchCountry, setSearchCountry] = useState('');
   const error = useSelector((state) => state.error);
