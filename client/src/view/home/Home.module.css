@@ -1,7 +1,14 @@
 body{
   background: url("../../assets/fondo5.avif") no-repeat center center fixed;
   background-size: cover;
+  text-align:center;
+}
 
+@media screen and (max-width:600px){
+  body{flex-direction: column;
+    align-items:center;
+    justify-content: center;
+  }
 }
 .selects{
     display: grid;
@@ -22,6 +29,7 @@ padding-bottom: 10px;
     align-items: center;
     background-color: transparent;
     padding: 1rem;
+
 }
 button {
   background-color: #e5eef7;
@@ -40,4 +48,9 @@ button:hover{
 }
 .pageNumber{
   color: rgb(37, 6, 6);
+}
+.buttonpagination{
+  margin: 50px;
+  text-shadow: 1px 1px 2px #427388;
+
 }

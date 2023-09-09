@@ -154,8 +154,8 @@ const Home = () => {
           <div className={style.cards}>
               <div>
                 {data.map((item) => renderItem(item))}
-                <div>
-                  <button
+                <div> {/* Controles de paginación */}
+                  <button className={style.buttonpagination}
                     onClick={goToPreviousPage}
                     disabled={currentPage === 1}
                   >
@@ -164,7 +164,7 @@ const Home = () => {
                   <span>
                     {currentPage} de {totalPages}
                   </span>
-                  <button
+                  <button className={style.buttonpagination}
                     onClick={goToNextPage}
                     disabled={endIndex >= currentData.length}
                   >
